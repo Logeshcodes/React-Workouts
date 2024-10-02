@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const State = () => {
+const Effect = () => {
+
+
 
     const [count , setCount] = useState(0)
 
-
+    useEffect(()=>{
+       console.log('Effect called...');
+        
+    },[count])
 
   return (
     <>
@@ -17,4 +22,4 @@ const State = () => {
   )
 }
 
-export default State
+export default Effect

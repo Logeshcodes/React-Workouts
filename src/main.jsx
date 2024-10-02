@@ -21,29 +21,42 @@ import { ErrorBoundary } from "./components/ErrorBoundary.jsx";
 import Error from "./components/Error.jsx";
 import PortalDemo from "./components/PortalDemo.jsx";
 
+
+// Hooks - functional components
+
+import State from "./Hooks/State.jsx";
+import Effect from "./Hooks/Effect.jsx";
+
 createRoot(document.getElementById("root")).render(
+  // <StrictMode>
+  //   {/* <Start/>
+  //   <Welcome name='Logesh'/>
+  //   <Hello/>
+  //   <Passing name='Logesh' fun={print}/>
+  //   <Passing name='Vicky'/>
+  //   <Passing name='Harish'>
+  //     <p>This is a Children..</p>
+  //   </Passing>
+  //   <ListRender/>
+  //   <StyleSheet primary={true}/> 
+  //   <LifeCycleA/>
+
+  //   <ParentComponent/>*/}
+
+  //   {/* <ErrorBoundary>
+  //     <Error heroName={"Logesh"} />
+  //   </ErrorBoundary>
+  //   <ErrorBoundary>
+  //     <Error heroName={"Joker"} />
+  //   </ErrorBoundary> */}
+
+  //   <PortalDemo/>
+
+
+  // </StrictMode>
+
   <StrictMode>
-    {/* <Start/>
-    <Welcome name='Logesh'/>
-    <Hello/>
-    <Passing name='Logesh' fun={print}/>
-    <Passing name='Vicky'/>
-    <Passing name='Harish'>
-      <p>This is a Children..</p>
-    </Passing>
-    <ListRender/>
-    <StyleSheet primary={true}/> 
-    <LifeCycleA/>
-
-    <ParentComponent/>*/}
-
-    {/* <ErrorBoundary>
-      <Error heroName={"Logesh"} />
-    </ErrorBoundary>
-    <ErrorBoundary>
-      <Error heroName={"Joker"} />
-    </ErrorBoundary> */}
-
-    <PortalDemo/>
+    {/* <State/> */}
+    <Effect/>
   </StrictMode>
 );
