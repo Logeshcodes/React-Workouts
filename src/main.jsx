@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-// import App from './App.jsx'
+import App from './App.jsx'
 import { Start } from "./components/FunctionalComponent";
 import Welcome from "./components/ClassComponent.jsx";
 
@@ -26,6 +26,7 @@ import PortalDemo from "./components/PortalDemo.jsx";
 
 import State from "./Hooks/State.jsx";
 import Effect from "./Hooks/Effect.jsx";
+
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
@@ -57,6 +58,8 @@ createRoot(document.getElementById("root")).render(
 
   <StrictMode>
     {/* <State/> */}
-    <Effect/>
+    {/* <Effect/> */}
+     <App/> {/*// usecontext- using App  */}
+     
   </StrictMode>
 );
