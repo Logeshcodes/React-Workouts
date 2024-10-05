@@ -35,3 +35,5 @@ const Reducer = ()=>{
 }
 
 export default Reducer
+
+// useReducer and Usecontext => do to counter app
