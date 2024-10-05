@@ -21,7 +21,8 @@ import { ErrorBoundary } from "./components/ErrorBoundary.jsx";
 import Error from "./components/Error.jsx";
 import PortalDemo from "./components/PortalDemo.jsx";
 
-import ControlledComponent from './Hooks/controlledComp.jsx'
+import ControlledComponent from './Hooks/Reducer.jsx'
+import Reducer from './Hooks/Reducer.jsx'
 
 // Hooks - functional components
 
@@ -61,6 +62,6 @@ createRoot(document.getElementById("root")).render(
     {/* <State/> */}
     {/* <Effect/> */}
      {/* <App/> // usecontext- using App  */}
-     <ControlledComponent/>
+     <Reducer/>
   </StrictMode>
 );
