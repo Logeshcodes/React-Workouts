@@ -9,9 +9,17 @@ import Reducer from "./Hooks/Reducer";
 import CustomHook from "./Hooks/CustomHook";
 import Parent from "./Props/Parent";
 
+// memoization
+
+import PureComponentDemo from "./memoization/PureComponentDemo";
+import UseMemo from "./memoization/UseMemo";
+import ReactMemo from "./memoization/ReactMemo";
+import PortalDemo from "./Props/PortalDemo";
+
 createRoot(document.getElementById("root")).render(
 
   <StrictMode>
-     <Parent/>
+     {/* <PureComponentDemo value='Hello' /> */}
+     <Reducer/>
   </StrictMode>
 );

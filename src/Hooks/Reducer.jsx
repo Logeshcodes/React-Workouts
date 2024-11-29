@@ -6,11 +6,11 @@ function counterReducer( state , action ){
     switch(action.type){
 
         case 'increment' : 
-            return {count : state.count + 1}
+            return {count : state.count + action.payload}
         case 'reset' : 
-            return {count : 0}
+            return {count : action.payload}
         case 'decrement' : 
-            return {count : state.count - 1}
+            return {count : state.count - action.payload}
         
     }
 }
@@ -25,9 +25,9 @@ const Reducer = () => {
 
     <h3>{state.count}</h3>
 
-    <button onClick={()=>  dispatcher({type : 'increment'})}>increment</button>
-    <button onClick={()=>  dispatcher({type : 'reset'})}>reset</button>
-    <button onClick={()=>  dispatcher({type : 'decrement'})}>decrement</button>
+    <button onClick={()=>  dispatcher({type : 'increment' , payload: 5 })}>increment</button>
+    <button onClick={()=>  dispatcher({type : 'reset' , payload: 0})}>reset</button>
+    <button onClick={()=>  dispatcher({type : 'decrement', payload: 5})}>decrement</button>
     </>
   )
 }
