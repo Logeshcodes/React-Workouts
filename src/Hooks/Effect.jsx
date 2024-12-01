@@ -2,10 +2,17 @@ import React, { useEffect, useState } from "react";
 
 const Effect = () =>{
 
-    const [ count , setCount] = useState(0)
+    let [ count , setCount] = useState(0)
 
     useEffect(()=>{
-        console.log('UseEffect Called...')
+        
+        const timer = setTimeout(()=>{
+            console.log('UseEffect Called...');
+        },2000)
+
+        return()=>{
+            clearInterval(timer)
+        }
     },[count])
 
 

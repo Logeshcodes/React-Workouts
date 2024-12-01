@@ -20,6 +20,6 @@ createRoot(document.getElementById("root")).render(
 
   <StrictMode>
      {/* <PureComponentDemo value='Hello' /> */}
-     <Reducer/>
+     <Effect/>
   </StrictMode>
 );
