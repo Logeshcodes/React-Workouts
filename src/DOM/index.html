@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div>
+        <h1 id="hello">Hello World</h1>
+        
+
+        
+        <button id="input"  >Date + 15</button>
+        <h2 id="demo"></h2>
+        
+    </div>
+
+    <script>
+
+        let parent = document.getElementById('hello')
+
+        
+        let child = document.createElement('h3')
+        child.innerHTML = 'Hello'
+
+        parent.appendChild(child)
+
+
+
+
+
+        document.getElementById('input').addEventListener('click' , displayDate)
+
+       function displayDate(){
+            let date = new Date().toDateString()
+            let now = new Date().getDate()
+            document.getElementById('demo').innerHTML = date
+       }
+        
+
+
+
+    </script>
+
+</body>
+</html>

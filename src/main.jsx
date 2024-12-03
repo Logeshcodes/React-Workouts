@@ -16,10 +16,22 @@ import UseMemo from "./memoization/UseMemo";
 import ReactMemo from "./memoization/ReactMemo";
 import PortalDemo from "./Props/PortalDemo";
 
+
+import UserList from "./DynamicRendering/UserList";
+import ConditionalRendering from "./DynamicRendering/ConditionalRendering";
+import Style from "./DynamicRendering/Style";
+
+import User from "./Components/User";
+import Forward from "./Hooks/Forward";
+
+import RenderProps from "./Props/RenderProps";
+
+
+
 createRoot(document.getElementById("root")).render(
 
   <StrictMode>
      {/* <PureComponentDemo value='Hello' /> */}
-     <Effect/>
+     <RenderProps/>
   </StrictMode>
 );
