@@ -5,6 +5,8 @@ const State = () =>{
 
     const [count , setCount] = useState(0);
 
+    console.log('State')
+
     return(
         <>
         <h3>{count}</h3>

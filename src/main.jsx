@@ -26,12 +26,15 @@ import Forward from "./Hooks/Forward";
 
 import RenderProps from "./Props/RenderProps";
 
+import App from "./CodeSplitting/LazyLoading";
+
+
 
 
 createRoot(document.getElementById("root")).render(
 
   <StrictMode>
      {/* <PureComponentDemo value='Hello' /> */}
-     <RenderProps/>
+     <App/>
   </StrictMode>
 );
