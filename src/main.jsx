@@ -27,14 +27,16 @@ import Forward from "./Hooks/Forward";
 import RenderProps from "./Props/RenderProps";
 
 import App from "./CodeSplitting/LazyLoading";
+import Mouse from "./Hooks/Mouse";
 
-
+import Declarative from "./Concepts/Features/Declarative";
 
 
 createRoot(document.getElementById("root")).render(
 
   <StrictMode>
      {/* <PureComponentDemo value='Hello' /> */}
-     <App/>
+     <Declarative/>
+    
   </StrictMode>
 );

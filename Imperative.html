@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+
+    <!-- Two concepts - imperative & DOM manipulation methods -->
+
+
+
+    <!-- manually create and append elements , update the DOM -->
+
+    <!-- re-render everything by calling render() -->
+
+
+
+<script>
+  let isLoggedIn = false;
+  const app = document.getElementById('app');
+
+  function render() {
+    app.innerHTML = ''; 
+    if (isLoggedIn) {
+      const heading = document.createElement('h1');
+      heading.textContent = 'Welcome back!';
+      app.appendChild(heading);
+    } else {
+      const button = document.createElement('button');
+      button.textContent = 'Login';
+      button.onclick = () => {
+        isLoggedIn = true;
+        render(); // re-render manually
+      };
+      app.appendChild(button);
+    }
+  }
+
+  render();
+</script>
+
+    
+</body>
+</html>
