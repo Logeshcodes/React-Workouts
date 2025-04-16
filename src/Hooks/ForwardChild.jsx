@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ForwardChild = React.forwardRef((props , ref) => {
+const ForwardChild = React.forwardRef((_ , ref) => {
     return <input type='text' ref={ref}></input>
   })
 
